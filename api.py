@@ -6,22 +6,24 @@ import shutil
 import argparse
 
 path = 'results/'
-
-parser = argparse.ArgumentParser(description='Process some integers.')
-parser.add_argument('function', type=str)
-parser.add_argument('-f', '--flag', type=str)
+API_keys_selected = utilities.tools.checkApiKey()
+parser = argparse.ArgumentParser(description='This program meant to generate code using openai API')
+parser.add_argument('function', type=str, choices=['gen', 'del', 'engines', 'apiKey'])
+parser.add_argument('-m', '--flag', type=str, )
 args = parser.parse_args()
 
-utilities.gen.get_cfg()
-
-# if args.function == 'gen':
-#         utilities.gen.genCode(args.flag)
-# if args.function == 'del':
-#         shutil.rmtree(path)
-#         os.mkdir(path)
-# if args.function == 'engines':
-#         utilities.gen.engines()
-
+if args.function == 'gen':
+        if API_keys_selected:
+                utilities.gen.genCode(args.flag)
+        else:
+                print('API keys are not selected, try run again with command apiKey to set them.')
+if args.function == 'del':
+        shutil.rmtree(path)
+        os.mkdir(path)
+if args.function == 'engines':
+        utilities.gen.engines()
+if args.function == 'apiKey':
+        utilities.tools.addApiKey()
 
 
 

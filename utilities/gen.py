@@ -1,28 +1,29 @@
 import openai
 
 import os
-from utilities.tools import hasherUsername, timeDateWithBreak
-from configparser import ConfigParser
+from utilities.tools import hasherUsername, timeDateWithBreak, get_cfg
 
-def get_cfg():
-    file = 'config.cfg'
-    cfg = ConfigParser()
-    cfg.read(file)
-    print(cfg['userinfo']['apiKey'])
+
 def genCode(message):
+    cfg = get_cfg()
+
     if message == None:
-        querry_str = "create html page for website developer with javascript animations"
-    a = "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"
-    user = "HeavyKisielPayne"
-    userencoded = hasherUsername(user)
+        querry_str = cfg['userinfo']['defaultUserMessage']
+    else:
+        querry_str = message
+
+    userencoded = hasherUsername(cfg['userinfo']['name'])
+    
     openai.api_key = os.getenv("OPENAI_API_KEY")
-    openai.api_key = a
+    if openai.api_key == None:
+        openai.api_key = cfg['userinfo']['apiKey']
 
 # https://platform.openai.com/docs/api-reference/completions/create
+    print('querry str: ' + querry_str)
     response = openai.Completion.create(
     model="code-davinci-002",
     prompt="<|endoftext|>"+querry_str+"\n--\nLabel:",
-    temperature=1.0,
+    temperature=0.2,
     max_tokens=1000,
     top_p=0.2,
     frequency_penalty=0.0,
@@ -45,13 +46,14 @@ def genCode(message):
     if r_cho[0].finish_reason != "length":
         f=open("results/"+timeDateWithBreak("_")+".txt","w")
         f.write(res_text)
+        print(res_text)
         f.close()
     else:
         f=open("results/"+timeDateWithBreak("_")+".txt","w")
         f.write('len#!')
         f.write(res_text)
+        print(res_text)
         f.close()
 def engines():
     b = openai.Engine.list()
-    c = openai.Image.create()
     print(b)
