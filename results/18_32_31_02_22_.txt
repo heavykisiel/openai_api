@@ -1,0 +1,73 @@
+len#! `generate-index-html`
+
+Generate index.html for programmers website.
+
+## Usage
+
+```
+npm install --save-dev @programmers/generate-index-html
+```
+
+```
+const generateIndexHtml = require('@programmers/generate-index-html');
+
+generateIndexHtml({
+  output: './index.html',
+  title: 'Programmers',
+  subtitle: 'Programming is fun',
+  description: 'Programming is fun',
+  keywords: 'programming,fun',
+  author: 'Programmers',
+  url: 'https://programmers.com',
+  twitter: '@programmers',
+  github: 'programmers',
+  email: 'programmers@programmers.com',
+  logo: 'https://programmers.com/logo.png',
+  logoWidth: '100',
+  logoHeight: '100',
+  logoAlt: 'Programmers',
+  favicon: 'https://programmers.com/favicon.ico',
+  themeColor: '#ffffff',
+  backgroundColor: '#ffffff',
+  color: '#000000',
+  footer: 'Programmers',
+  footerUrl: 'https://programmers.com',
+  footerEmail: 'programmers@programmers.com',
+  footerTwitter: '@programmers',
+  footerGithub: 'programmers',
+  footerCopyright: 'Copyright © Programmers',
+  footerCopyrightUrl: 'https://programmers.com',
+  footerCopyrightYear: '2020',
+  footerCopyrightYears: '2020-2021',
+  footerCopyrightYearsUrl: 'https://programmers.com',
+  footerCopyrightYearsStart: '2020',
+  footerCopyrightYearsEnd: '2021',
+  footerCopyrightYearsStartUrl: 'https://programmers.com',
+  footerCopyrightYearsEndUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEnd: '2020-2021',
+  footerCopyrightYearsStartEndUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparator: '-',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers.com',
+  footerCopyrightYearsStartEndSeparatorUrl: 'https://programmers

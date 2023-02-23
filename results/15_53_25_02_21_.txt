@@ -1,0 +1,12 @@
+
+<input type="text" name="label" value="<?php echo $label; ?>" />
+<br />
+<br />
+
+<input type="submit" value="Submit" />
+</form>
+
+<br />
+<br />
+
+<a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'index')); ?>">Back</a>

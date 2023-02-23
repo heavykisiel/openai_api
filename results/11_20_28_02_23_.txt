@@ -1,0 +1,77 @@
+len#!
+-
+Create a page with a title and a label.
+The label should be in the center of the page.
+The label should have a background color of #ff0000.
+The label should have a text color of #ffffff.
+The label should have a font size of 30px.
+The label should have a font family of Arial.
+The label should have a text of "Hello World".
+The label should have a border radius of 10px.
+The label should have a padding of 10px.
+The label should have a margin of 10px.
+The label should have a width of 200px.
+The label should have a height of 200px.
+The label should have a border of 1px solid #000000.
+The label should have a box shadow of 5px 5px 5px #000000.
+The label should have a text shadow of 2px 2px 2px #000000.
+The label should have a transition of all 1s.
+The label should have a hover transition of all 1s.
+The label should have a hover background color of #000000.
+The label should have a hover text color of #ff0000.
+The label should have a hover border color of #ff0000.
+The label should have a hover box shadow of 10px 10px 10px #000000.
+The label should have a hover text shadow of 5px 5px 5px #000000.
+The label should have a hover border radius of 20px.
+The label should have a hover padding of 20px.
+The label should have a hover margin of 20px.
+The label should have a hover width of 400px.
+The label should have a hover height of 400px.
+The label should have a hover border of 2px solid #ff0000.
+The label should have a hover transform of rotate(360deg).
+The label should have a hover transform origin of center.
+The label should have a hover transform style of preserve-3d.
+The label should have a hover perspective of 1000px.
+The label should have a hover perspective origin of center.
+The label should have a hover backface visibility of visible.
+The label should have a hover opacity of 0.5.
+The label should have a hover cursor of pointer.
+The label should have a hover outline of none.
+The label should have a hover outline offset of 0px.
+The label should have a hover outline color of #ff0000.
+The label should have a hover outline style of solid.
+The label should have a hover outline width of 1px.
+The label should have a hover text decoration of underline.
+The label should have a hover text decoration color of #ff0000.
+The label should have a hover text decoration style of solid.
+The label should have a hover text decoration line of underline.
+The label should have a hover text decoration skip of none.
+The label should have a hover text decoration position of under.
+The label should have a hover text decoration thickness of 1px.
+The label should have a hover text decoration offset of 0px.
+The label should have a hover text decoration outline of none.
+The label should have a hover text decoration outline color of #ff0000.
+The label should have a hover text decoration outline style of solid.
+The label should have a hover text decoration outline width of 1px.
+The label should have a hover text decoration outline offset of 0px.
+The label should have a hover text decoration outline radius of 0px.
+The label should have a hover text decoration outline color transparent.
+The label should have a hover text decoration outline style none.
+The label should have a hover text decoration outline width 0px.
+The label should have a hover text decoration outline offset 0px.
+The label should have a hover text decoration outline radius 0px.
+The label should have a hover text decoration outline color currentcolor.
+The label should have a hover text decoration outline style none.
+The label should have a hover text decoration outline width 0px.
+The label should have a hover text decoration outline offset 0px.
+The label should have a hover text decoration outline radius 0px.
+The label should have a hover text decoration outline color invert.
+The label should have a hover text decoration outline style none.
+The label should have a hover text decoration outline width 0px.
+The label should have a hover text decoration outline offset 0px.
+The label should have a hover text decoration outline radius 0px.
+The label should have a hover text decoration outline color inherit.
+The label should have a hover text decoration outline style none.
+The label should have a hover text decoration outline width 0px.
+The label should have a hover text decoration outline offset 0px.
+The label

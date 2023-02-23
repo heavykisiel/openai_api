@@ -1,0 +1,37 @@
+ `website`
+
+This action generates the index.html for the programmers website.
+
+The action takes the following inputs:
+
+- `github_token`: The GitHub token to use for the action.
+- `website_repo`: The repository to push the website to.
+- `website_branch`: The branch to push the website to.
+- `website_path`: The path to push the website to.
+- `programmers_repo`: The repository to get the programmers from.
+- `programmers_branch`: The branch to get the programmers from.
+- `programmers_path`: The path to get the programmers from.
+- `template_repo`: The repository to get the template from.
+- `template_branch`: The branch to get the template from.
+- `template_path`: The path to get the template from.
+- `template_file`: The file to get the template from.
+- `output_file`: The file to write the output to.
+
+The action outputs the following:
+
+- `output_file`: The file that was written.
+
+The action takes the following environment variables:
+
+- `GITHUB_TOKEN`: The GitHub token to use for the action.
+- `WEBSITE_REPO`: The repository to push the website to.
+- `WEBSITE_BRANCH`: The branch to push the website to.
+- `WEBSITE_PATH`: The path to push the website to.
+- `PROGRAMMERS_REPO`: The repository to get the programmers from.
+- `PROGRAMMERS_BRANCH`: The branch to get the programmers from.
+- `PROGRAMMERS_PATH`: The path to get the programmers from.
+- `TEMPLATE_REPO`: The repository to get the template from.
+- `TEMPLATE_BRANCH`: The branch to get the template from.
+- `TEMPLATE_PATH`: The path to get the template from.
+- `TEMPLATE_FILE`: The file to get the template from.
+- `OUTPUT_FILE`: The file to write the output to.
